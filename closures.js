@@ -113,29 +113,40 @@ fnCounter(function(){console.log("hi");}, 4);
 /*
   var counter = function(){
     for (var i=1; i<=5; i++) {
-      setTimeout( function timer(){
-          console.log( i );
-      }, i*1000 );
+      setTimeout( function timer(num){
+          console.log(num);
+      }, i*1000, i );
     }
-  };
+  }; 
 
-  Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
+  Above you have a function named counter. 
+  Examine the function (without running the code)
+   then below write what you expect to happen when 
+   the funciton is invoked. *Hint: setTimeout calls a 
+   function or evaluates an expression after a specified number of milliseconds.
 
     //Answer Here
-
+    //I think that the counter function will log i = 1 after one second, i = 2 after two seconds, etc.
 
   Now, run the function in your console and note what happpens.
 
   Was your answer right or wrong?
 
     //Answer Here
+    //Wrong!!!!!!
 
 
   Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc)
 */
 
     //Code Here
-
+    var counter = function(){
+    for (var i=1; i<=5; i++) {
+      setTimeout( function timer(num){
+          console.log(num);
+      }, i*1000, i );
+    }
+  }; 
 
 
 //Next Problem
