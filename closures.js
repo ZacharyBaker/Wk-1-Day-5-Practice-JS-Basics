@@ -68,10 +68,22 @@ function makeCounter(){
 
 
 /*
-  Write a function that does something simple (console, alert, etc). Write a second function that accepts the first function as it's first parameter. The second function should return a new third function which, when invoked, invokes the first, original function that was passed in, but will only ever do so once.
+  Write a function that does something simple (console, alert, etc).
+   Write a second function that accepts the first 
+   function as it's first parameter. The second function should 
+   return a new third function which, when invoked, invokes the first, 
+   original function that was passed in, but will only ever do so once.
 */
 
   //Code Here
+  function alertMe(){
+    alert("hi");
+  }
+function second(alertMe){
+  return function third(){
+    alertMe();
+  }
+}
 
 
 
@@ -80,7 +92,11 @@ function makeCounter(){
 
 
 /*
-  Now, similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter will be an anonymous function and the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
+  Now, similar to the last problem, write a function called 'fnCounter' 
+  that accepts two parameters. The first parameter will be an anonymous 
+  function and the second parameter, 'N', will be a number. Now, in 'fnCounter', 
+  allow the anonymous funciton to be invoked 'N' number of times. After it's been
+   invoked 'N' number of times, return 'STOP'.
 */
 
 
