@@ -60,7 +60,10 @@ function welcome(){
 
 
   //Answer Here
-
+// Nan, undefined, '', false, 0, null
+// if(){
+//   execute this ish
+// }  if the value is truthy, the ish will run
 
 
 //Next Problem
