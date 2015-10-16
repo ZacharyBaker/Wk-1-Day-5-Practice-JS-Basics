@@ -35,7 +35,11 @@ function getName(){
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+function welcome(){
+  var boob = getName();
+  alert("Welcome " + boob);
+  
+}
 
 //Next problem
 
