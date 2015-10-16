@@ -166,4 +166,11 @@ fnCounter(function(){console.log("hi");}, 4);
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
 
-
+var funcArray = [
+  function(){return 0;},
+  function(){return 1;},
+  function(){return 2;},
+  function(){return 3;},
+  function(){return 4;},
+  function(){return 5;}
+];
