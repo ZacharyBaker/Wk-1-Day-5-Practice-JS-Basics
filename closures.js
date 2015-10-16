@@ -99,8 +99,13 @@ function second(alertMe){
    invoked 'N' number of times, return 'STOP'.
 */
 
-
-
+function fnCounter(inputFunc, N){
+  for (var i = 0; i < N; i++){
+    inputFunc();
+  }
+  return "STOP";
+}
+fnCounter(function(){console.log("hi");}, 4);
 //Next Problem
 
 
