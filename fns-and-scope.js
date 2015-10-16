@@ -49,7 +49,8 @@ function welcome(){
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+//in the declaration (parameters)
+//in the invocation (arguments)
 
 //Next problem
 
